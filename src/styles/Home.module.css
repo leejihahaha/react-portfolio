@@ -1,4 +1,54 @@
-.title {
+/* .title {
   height: 1000vh;
+} */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter {
+  /* height: 100vh; */
   /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  font-size: 45px;
+  border-right: 8px solid var(--accent-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  color: inherit;
+  letter-spacing: 7px;
+  animation: typing 1.5s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-color);
+  }
 }
