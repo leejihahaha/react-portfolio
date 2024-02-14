@@ -44,22 +44,22 @@ export default function Navbar({ home, about, projects, contact }) {
           }
         >
           <li>
-            <a href="#!" onClick={() => scrollToSection(home)}>
+            <a href="#home" onClick={() => scrollToSection(home)}>
               Home
             </a>
           </li>
           <li>
-            <a href="#!" onClick={() => scrollToSection(about)}>
+            <a href="#about" onClick={() => scrollToSection(about)}>
               About
             </a>
           </li>
           <li>
-            <a href="#!" onClick={() => scrollToSection(projects)}>
+            <a href="#projects" onClick={() => scrollToSection(projects)}>
               Projects
             </a>
           </li>
           <li>
-            <a href="#!" onClick={() => scrollToSection(contact)}>
+            <a href="#contact" onClick={() => scrollToSection(contact)}>
               Contact
             </a>
           </li>
