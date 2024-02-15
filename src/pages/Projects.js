@@ -2,14 +2,14 @@
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "../components/ProjectCard";
 import { useQuery } from "@tanstack/react-query";
-import { getData } from "../api";
+import { fetchData } from "../api";
 
 export default function Projects() {
   const {
     isPending,
     data: project,
     error,
-  } = useQuery({ queryKey: ["project"], queryFn: getData });
+  } = useQuery({ queryKey: ["project"], queryFn: fetchData });
 
   return (
     <>
