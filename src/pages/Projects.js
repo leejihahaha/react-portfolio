@@ -2,18 +2,18 @@
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "../components/ProjectCard";
 import { useQuery } from "@tanstack/react-query";
-import { fetchData } from "../api";
+import { getData } from "../api";
 
 export default function Projects() {
   const {
-    isLoading,
+    isPending,
     data: project,
     error,
-  } = useQuery({ queryKey: "project", queryFn: fetchData });
+  } = useQuery({ queryKey: ["project"], queryFn: getData });
 
   return (
     <>
-      {isLoading && <p>Loading...</p>}
+      {isPending && <p>Loading...</p>}
       {error && <p>{error}</p>}
       <div className={styles.container}>
         {project &&
