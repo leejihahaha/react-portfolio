@@ -13,7 +13,7 @@ export default function Projects() {
       )
     ).json();
     setProject(response);
-    // console.log(response);
+    console.log(response);
   }
 
   useEffect(() => {
