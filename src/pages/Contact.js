@@ -1,20 +1,19 @@
 import React from "react";
 import styles from "../styles/Contact.module.css";
-import { MdOutlineAttachEmail } from "react-icons/md";
-import { IoIosSend } from "react-icons/io";
+import { RiMailSendLine } from "react-icons/ri";
 
 export default function Contact() {
   return (
     <section className={styles.container}>
-      <h2 className={styles.contact_title}>Contact Me</h2>
-      <span className={styles.contact_subtitle}>Most recent work</span>
+      <h2 className={styles.contact_title}>
+        <span>
+          <RiMailSendLine />
+        </span>
+        Contact Me
+      </h2>
+
       <div className={styles.contact_container}>
-        <div className={styles.contact_content}>
-          <h3>Talk to me</h3>
-          <span>
-            <MdOutlineAttachEmail />
-          </span>
-        </div>
+        <div className={styles.contact_content}></div>
         <div className={styles.contact_content}>
           <h3 className={styles.title}>
             <form className={styles.contact_form}>
@@ -26,7 +25,7 @@ export default function Contact() {
                   type="text"
                   name="name"
                   className={styles.contact_form_input}
-                  placeholder="insert your name"
+                  // placeholder="insert your name"
                 />
               </div>
 
@@ -38,7 +37,7 @@ export default function Contact() {
                   type="email"
                   name="email"
                   className={styles.contact_form_input}
-                  placeholder="insert your name"
+                  // placeholder="insert your email"
                 />
               </div>
 
@@ -50,15 +49,15 @@ export default function Contact() {
                   name="message"
                   cols="30"
                   rows="10"
-                  className={styles.contact_form_input}
-                  placeholder="Write your message"
+                  className={`${styles.contact_form_area} ${styles.contact_form_input}`}
+                  // placeholder="Write your message"
                 ></textarea>
               </div>
               <button href="#contact" className={styles.button}>
                 Send Message
-                <span>
+                {/* <span>
                   <IoIosSend />
-                </span>
+                </span> */}
               </button>
             </form>
           </h3>
