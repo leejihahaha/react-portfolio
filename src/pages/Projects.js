@@ -12,15 +12,20 @@ export default function Projects() {
   } = useQuery({ queryKey: ["project"], queryFn: fetchData });
 
   return (
-    <>
+    <section className={styles.container}>
       {isPending && <p>Loading...</p>}
       {error && <p>{error}</p>}
-      <div className={styles.container}>
+      <div className={styles.title_wrap}>
+        <h2 className={styles.projects_title}>Projects💡</h2>
+        <span className={styles.projects_subtitle}>Most recent work</span>
+      </div>
+
+      <div className={styles.content}>
         {project &&
           project.map((item, idx) => {
             return <ProjectCard project={item} key={idx} />;
           })}
       </div>
-    </>
+    </section>
   );
 }

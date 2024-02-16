@@ -1,12 +1,15 @@
 :root {
   --main-bg: #fafafa;
+  --projectcard-text: #ededed;
   --sub-text: #7d7d7d;
   --color-text: #000000;
+
   --button-bg: #2d98ef;
   --button-text: #fafbfc;
   --button-hover-bg: #3b3b3c;
+  --card-bg: #3b3b3c;
   --social-hover: #a1a1a1;
   --accent-color: #7bbdf3;
-  --main-title-hover: #7bbdf3;
-  --accent-home-menu: #6e6e6e;
+  --main-title-hover: #96caf5;
+  --accent-home-menu: #7bbdf3;
 }

@@ -95,7 +95,11 @@
   }
   .menuItems li:hover {
     border-radius: 10px;
+    background-color: var(--button-hover-bg);
+    border-radius: 5px;
+    width: 100%;
   }
+
   .menuItems a {
     width: 100%;
   }

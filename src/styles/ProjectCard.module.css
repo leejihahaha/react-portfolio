@@ -1,0 +1,11 @@
+.card {
+  background-color: var(--card-bg);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card_content {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--projectcard-text);
+}

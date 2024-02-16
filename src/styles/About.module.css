@@ -1,18 +1,17 @@
-/* .container {
-} */
-
 .content {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   justify-content: flex-start;
   height: 110vh;
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
-  margin-left: 50px;
+}
+.desc {
+  padding-top: 50px;
 }
 
-.bar::after {
+/* .bar::after {
   content: "";
   position: absolute;
   left: 180px;
@@ -24,18 +23,24 @@
   margin-left: 1px;
   margin-right: 1px;
   transform: scaleY(0.4);
-}
+} */
 
 .title {
+  color: var(--color-text);
   margin-top: 120px;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: var(--sub-text);
 }
 
 @media screen and (max-width: 768px) {
-  .content {
+  /* .content {
     margin-left: 20px;
-  }
-  .bar::after {
+  } */
+  /* .bar::after {
     left: 160px;
     width: 55%;
-  }
+  } */
 }

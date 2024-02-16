@@ -3,20 +3,35 @@ import styles from "../styles/Home.module.css";
 import Social from "../components/Social";
 import Scroll from "../components/Scroll";
 import Profile from "../components/Profile";
+import Skill from "../components/Skill";
+import { Cursor, Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.title}>
-          <div className={styles.main_title}>Front End Developer</div>
+        <div className={styles.title_content}>
+          <h1 className={styles.main_title}>
+            <Typewriter
+              words={["I'm Web Developer"]}
+              delaySpeed={1000}
+              typeSpeed={150}
+              cursorStyle={"|"}
+            />
+            <Cursor cursorColor="#1a4f7a" />
+          </h1>
           <div className={styles.title_line}></div>
           <p className={styles.sub_title}>
-            안녕하세요 이지하 입니다
+            <span>Front End Developer</span>
+            <br />
+            이지하 입니다
             <br />
             항상 배우고 성장하는 것을 지향합니다.
           </p>
           <Social />
+          <div className={styles.skill}>
+            <Skill />
+          </div>
         </div>
         <div>
           <Profile />
