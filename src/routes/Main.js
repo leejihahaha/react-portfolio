@@ -1,3 +1,4 @@
+//레이아웃
 import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import About from "../pages/About";

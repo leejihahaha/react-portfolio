@@ -11,12 +11,12 @@
 
 .projects_title {
   margin-top: 120px;
-  color: var(--color-text);
+  color: var(--list-title);
   font-size: 30px;
 }
 
 .projects_subtitle {
-  color: var(--sub-text);
+  color: var(--list-sub-title);
 }
 
 .content {

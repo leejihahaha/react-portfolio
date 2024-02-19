@@ -1,4 +1,3 @@
-// import React, { useEffect, useState } from "react";
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "../components/ProjectCard";
 import { useQuery } from "@tanstack/react-query";

@@ -1,15 +1,34 @@
+/* common */
 :root {
   --main-bg: #fafafa;
-  --projectcard-text: #ededed;
-  --sub-text: #7d7d7d;
+  --white-bg: #ffffff;
   --color-text: #000000;
 
-  --button-bg: #2d98ef;
-  --button-text: #fafbfc;
+  /* home */
+  --projectcard-text: #ededed;
+  --home-sub-maintitle: #0e4883;
+  --home-sub-title: #7d7d7d;
+  --home-social-hover: #a1a1a1;
+  --arrow-color: #000000;
+
+  /* nav */
+  --nav-bgColor: #ffffff;
+  --nav-hover: #96caf5;
+
+  /* list title */
+  --list-title: #000000;
+  --list-sub-title: #7d7d7d;
+
+  /* mobile */
   --button-hover-bg: #3b3b3c;
+
+  /* contact */
+  --label-color: #0e4883;
+  --input-color: #7d7d7d;
+  --button-text: #fafbfc;
+  --button-bg: #326187;
+
   --card-bg: #3b3b3c;
-  --social-hover: #a1a1a1;
   --accent-color: #7bbdf3;
-  --main-title-hover: #96caf5;
   --accent-home-menu: #7bbdf3;
 }
