@@ -24,19 +24,15 @@
   color: var(--home-sub-title);
   margin-top: 20px;
 }
+.sub_comment {
+  margin-top: 20px;
+}
 
 .sub_title span {
   color: var(--home-sub-maintitle);
   font-weight: bold;
 }
 
-.title_line::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(135deg, #a8fbff 0%, #0470dc 100%);
-  width: 240px;
-  height: 3px;
-}
 .home_img {
   background: url("../assets/profile.png");
   background-repeat: no-repeat;

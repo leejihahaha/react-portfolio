@@ -13,7 +13,7 @@ export default function Social() {
         Github
       </a>
       <a
-        href="https://www.notion.so/77716f6ca06e4e48b1c62fd128549d27"
+        href="https://dog-curler-fde.notion.site/f0e18e54daf54d01ba72a3c161bfc79f"
         target="_blank"
         className="home_social_icon"
         rel="noreferrer"

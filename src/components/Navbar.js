@@ -3,7 +3,7 @@ import styles from "../styles/Navbar.module.css";
 import { FaHamburger } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
-export default function Navbar({ home, about, projects, contact }) {
+export default function Navbar({ home, projects, about, contact }) {
   const [menuClicked, setMenuClicked] = useState(false);
 
   const toggleMunuClick = () => {
@@ -15,6 +15,7 @@ export default function Navbar({ home, about, projects, contact }) {
       top: elelmentRef.current.offsetTop,
       behavior: "smooth",
     });
+    setMenuClicked(false);
   };
 
   return (
@@ -49,13 +50,13 @@ export default function Navbar({ home, about, projects, contact }) {
             </a>
           </li>
           <li>
-            <a href="#about" onClick={() => scrollToSection(about)}>
-              About
+            <a href="#projects" onClick={() => scrollToSection(projects)}>
+              Projects
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={() => scrollToSection(projects)}>
-              Projects
+            <a href="#about" onClick={() => scrollToSection(about)}>
+              About
             </a>
           </li>
           <li>

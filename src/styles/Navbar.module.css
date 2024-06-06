@@ -45,10 +45,8 @@
 }
 
 .menuItems li:hover {
-  /* background-color: var(--button-hover-bg); */
   color: var(--nav-hover);
-  /* border-top-left-radius: 5px;
-  border-top-right-radius: 5px; */
+
   width: 100%;
 }
 

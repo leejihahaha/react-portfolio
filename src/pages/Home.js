@@ -23,10 +23,8 @@ export default function Home() {
           <div className={styles.title_line}></div>
           <p className={styles.sub_title}>
             <span>Front End Developer</span>
-            <br />
-            이지하 입니다
-            <br />
-            항상 배우고 성장하는 것을 지향합니다.
+            <p className={styles.sub_comment}>안녕하세요! 이지하입니다.</p>
+            <p> 항상 배우고 성장하는 것을 지향합니다.</p>
           </p>
           <Social />
           <div className={styles.skill}>

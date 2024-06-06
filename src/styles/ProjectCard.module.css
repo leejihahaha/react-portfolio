@@ -1,11 +1,105 @@
-.card {
-  background-color: var(--card-bg);
+.container {
+  display: flex;
+  margin-top: 100px;
+}
+
+.img_motion {
+  position: relative;
   overflow: hidden;
-  border-radius: 8px;
+}
+
+.card_type {
+  border: 2px dashed rgb(179, 179, 179);
+  color: var(--label-color);
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.card_title {
+  margin-top: 20px;
+}
+
+.card_description {
+  margin-top: 20px;
+  color: rgb(121, 121, 121);
+}
+
+.skill_tag_title {
+  font-weight: 600;
+}
+/* .container:hover {
+  color: rgba(0, 0, 0, 0.5);
+} */
+.skill_tag {
+  margin-right: 10px;
+  font-weight: 600;
+  color: rgb(121, 121, 121);
+}
+
+img {
+  width: 500px;
+  height: 330px;
+  border-radius: 10px;
+}
+
+.img_wrap {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .card_content {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: var(--projectcard-text);
+  margin-left: 200px;
+}
+
+.card_description {
+  white-space: pre-wrap;
+  width: 500px;
+  height: 100px;
+}
+
+.card_link {
+  display: flex;
+  margin-top: 50px;
+}
+
+.card_link a {
+  margin-right: 30px;
+  border-radius: 10px;
+  color: var(--button-text);
+  background-color: rgb(76, 76, 76);
+  border: 2px solid rgb(76, 76, 76);
+  padding: 10px;
+}
+.card_link a:hover {
+  background-color: white;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+  .card_content {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .card_description {
+    white-space: normal;
+    width: 400px;
+    height: 50px;
+  }
+  img {
+    width: 400px;
+    height: 270px;
+    border-radius: 10px;
+  }
+  .skill_tag_title {
+    margin-top: 40px;
+  }
 }

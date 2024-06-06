@@ -1,6 +1,13 @@
-export async function fetchData() {
-  return fetch(
-    "https://raw.githubusercontent.com/leejihahaha/myapi/master/myapi/project.json"
-  ).then((response) => response.json());
-}
-//api를 fetch 하고 json을 리턴하는 함수
+import axios from "axios";
+
+export const getData = async () => {
+  try {
+    const { data } = await axios.get(
+      "https://raw.githubusercontent.com/leejihahaha/myapi/master/myapi/project.json"
+    );
+    return data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
+};

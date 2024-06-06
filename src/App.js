@@ -1,6 +1,6 @@
 import "./styles/global.css";
 import "./styles/theme.css";
-import Main from "./routes/Main";
+import Main from "./pages/Main";
 import styles from "./styles/App.module.css";
 
 function App() {

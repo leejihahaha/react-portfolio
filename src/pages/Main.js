@@ -14,16 +14,16 @@ export default function Main() {
 
   return (
     <>
-      <Navbar home={home} about={about} projects={projects} contact={contact} />
+      <Navbar home={home} projects={projects} about={about} contact={contact} />
       <div>
         <div ref={home}>
           <Home />
         </div>
-        <div ref={about}>
-          <About />
-        </div>
         <div ref={projects}>
           <Projects />
+        </div>
+        <div ref={about}>
+          <About />
         </div>
         <div ref={contact}>
           <Contact />

@@ -1,14 +1,14 @@
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "../components/ProjectCard";
 import { useQuery } from "@tanstack/react-query";
-import { fetchData } from "../api";
+import { getData } from "../api";
 
 export default function Projects() {
   const {
     isPending,
     data: project,
     error,
-  } = useQuery({ queryKey: ["project"], queryFn: fetchData });
+  } = useQuery({ queryKey: ["project"], queryFn: getData });
 
   return (
     <section className={styles.container}>
@@ -19,12 +19,12 @@ export default function Projects() {
         <span className={styles.projects_subtitle}>Most recent work</span>
       </div>
 
-      <div className={styles.content}>
+      <ul className={styles.content}>
         {project &&
           project.map((item, idx) => {
             return <ProjectCard project={item} key={idx} />;
           })}
-      </div>
+      </ul>
     </section>
   );
 }
