@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  height: 190vh;
+  height: 210vh;
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    height: 240vh;
+    height: 350vh;
   }
   .content {
     display: grid;
