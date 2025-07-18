@@ -45,7 +45,7 @@ export default function ProjectCard({ project }) {
           <div className={styles.card_link}>
             {memo && (
               <a
-                className={styles.momo}
+                className={styles.memo}
                 href={memo}
                 target="_blank"
                 rel="noreferrer"
@@ -63,7 +63,7 @@ export default function ProjectCard({ project }) {
                 Github
               </a>
             )}
-            {memo && (
+            {github_page && (
               <a
                 className={styles.github_page}
                 href={github_page}
